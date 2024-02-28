@@ -1,27 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@500&family=Cardo&family=Fondamento&family=Geologica:wght@100;200;500;800&family=Hanuman:wght@100;300;700;900&family=Open+Sans:ital,wght@0,800;1,700&family=Orbitron:wght@700;800&family=Oregano&family=Play&family=Playfair+Display:wght@500&family=Poppins:wght@300;500&family=Radley&family=Roboto+Slab:wght@100;200;300;400;500;700;900&family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Young+Serif&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  .nav-link{
+    @apply relative text-black font-bold cursor-pointer text-[17px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-red-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center uppercase hidden;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .nav-link-mobile{
+    @apply relative mb-[2rem] text-white font-bold cursor-pointer text-[25px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center uppercase ;
+  }
+  .heading{
+    @apply text-center text-[#333] text-[22px] sm:text-[30px] md:text-[38px] font-bold capitalize
+  }
+  .destination_h1{
+    @apply text-black mt-[1rem] text-[20px] text-center font-semibold
+  }
+  .destination_p{
+    @apply text-black text-[17px] text-center opacity-70 font-semibold
+  }
+  .footer_heading{
+    @apply mb-[1.5rem] text-black text-[20px] font-bold
+  }
+  .footer_link{
+    @apply block mb-[1rem] text-gray-600 text-[16px] hover:text-red-500 transition-all duration-100 w-fit
+  }
+  .footer_icon{
+    @apply w-[2.3rem] h-[2.3rem] flex cursor-pointer items-center justify-center rounded-full hover:opacity-60 transition-all duration-200 
+  }
+  }
