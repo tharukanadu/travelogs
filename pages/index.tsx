@@ -4,6 +4,7 @@ import MobileNav from '@/Components/Healper/MobileNav'
 import Hero from '@/Components/Healper/Hero'
 import TopDestination from '@/Components/Healper/TopDestination'
 import Hotels from '@/Components/Healper/Hotels'
+
 import Contact from '@/Components/Healper/Contact'
 import Footer from '@/Components/Healper/Footer'
 
@@ -19,7 +20,7 @@ const HomePage = () => {
       <Hero/>
       <TopDestination/>
       <Hotels/>
-      <Reviews/>
+      
       <Contact/>
       <Footer/>
     </div>
