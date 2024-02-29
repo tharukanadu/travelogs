@@ -4,7 +4,6 @@ import MobileNav from '@/Components/Healper/MobileNav'
 import Hero from '@/Components/Healper/Hero'
 import TopDestination from '@/Components/Healper/TopDestination'
 import Hotels from '@/Components/Healper/Hotels'
-import Reviews from '@/Components/Healper/reviews'
 import Contact from '@/Components/Healper/Contact'
 import Footer from '@/Components/Healper/Footer'
 
